@@ -31,6 +31,7 @@ The specifications for the suspension coils dictate that the variance of the coi
 In addition to looking at summary statistics of the suspension data, we wanted to perform t-tests to determine if all manufacturing lots (and each lot separately) are statistically different from the population mean of 1,500 PSI.
 
 **All Manufacturing T-Test**
+
 ![ttest all](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/ttest%20all.png)
 
 **Lot 1 T-Test**

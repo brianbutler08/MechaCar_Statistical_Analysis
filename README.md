@@ -6,7 +6,7 @@ For this activity, we ran a multiple linear regression to explore several indepe
 
 In looking at the results of the regression, it is unlikely that vehicle length and ground clearance provide random amounts of variance to the model. Both appear to make major contributions in determining the miles per gallon of a particular vehicle.
 
-![linear regression]()
+![linear regression](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/linear%20regression.png)
 
 The slope of the model is not considered to be zero. The low p-value leads us to reject the null hypothesis that the slope is zero.
 
@@ -16,9 +16,9 @@ While our model is a good start to understanding how these various car features 
 
 In addition to vehicle prototype information, our dataset also included data from multiple production lots of suspension coils, specifically the pounds per square inch (PSI) of each coil. In order to determine if the manufacturing process is consistent across production lots we ran some quick summary statistics - mean, median, variance and standard deviation - for all of the coils in the dataset as well as for each production lot separately.
 
-![total summary]()
+![total summary](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/total%20summary.png)
 
-![lot summary()
+![lot summary(https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/lot%20summary.png)
 
 The specifications for the suspension coils dictate that the variance of the coils cannot exceed 100 PSI. When we look at all of the coils tested, the group as a whole passes this requirement, as the variance for coils is 62.3. However, the picture changes after summarizing each lot independently. Lots 1 and 2 are still well within the 100 PSI range, but the coils in manufacturing lot 3 far exceed it with a variance of 170.3.
 
@@ -26,13 +26,17 @@ The specifications for the suspension coils dictate that the variance of the coi
 
 In addition to looking at summary statistics of the suspension data, we wanted to perform t-tests to determine if all manufacturing lots (and each lot individually) are statistically different from the population mean of 1,500 PSI.
 
-![ttest all]()
+All Manufacturing Lots Summary
+![ttest all](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/ttest%20all.png)
 
-![ttest lot1]()
+Lot 1 Summary
+![ttest lot1](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/ttest%20lot1.png)
 
-![ttest lot2]()
+Lot 2 Summary
+![ttest lot2](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/ttest%20lot2.png)
 
-![ttest lot3]()
+Lot 3 Summary
+![ttest lot3](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/MechaCar%20images/ttest%20lot3.png)
 
 For the dataset of all coils (mean = 1498.8, p-value = 0.060), as well as Lot 1 (mean = 1500, p-value = 1) and Lot 2 (mean = 1500.2, p-value = 0.607), we failed to reject the null hypothesis that the mean(s) are statistically different from the population mean. For Lot 3 (mean = 1496.1, p-value = 0.042) however, our conclusion was to reject the null because our p-value was less than our significance level of 0.05.
 
@@ -46,6 +50,6 @@ For my study, we would look at crash data, specifically data taken from the fron
 
 Sample crush profile taken from NHTSA testing on the 2011 Toyota Prius 5-door
 
-![prius]()
+![prius](https://github.com/brianbutler08/MechaCar_Statistical_Analysis/blob/main/prius.png)
 
 Without knowing population means, we would run some two-sample t-tests comparing MechaCar collison data with collision data from similar vehicles (i.e. a MechaCar SUV with competitor SUVs). We could look at the difference in measurement of crash zones (1 through 6) after the crash vs before to see if there is a difference in means between our two samples (MechaCar vs competitor). The null hypothesis would be that there is no difference in the means, while the alternate hypothesis would be that there is a difference. MechaCar would be hopeful that their vehicle(s) would withstand collisions better than competitors and could include those facts in future marketing campaigns.

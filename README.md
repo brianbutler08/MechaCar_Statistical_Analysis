@@ -38,3 +38,14 @@ For the dataset of all coils (mean = 1498.8, p-value = 0.060), as well as Lot 1 
 
 ## Study Design: MechaCar vs  Competition
 
+The final part of this activity involved designing a theorhetical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers. The idea would be to focus on a element of performance that was of interest to consumers in an effort to maximize sales of our new vehicles. 
+
+When looking at consumer criteria for purchasing a new car, safety typically tops the list. Because "safety" is a broad term that encompasses a large number of measurements, it will be necessary to focus our study to specific element(s) in order to come to clear conclusions. In the United States, vehicle safety data can be found at the website of the National Highway Traffic Saftey Administration (NHTSA), much of it via an API connection. 
+
+For my study, we would look at crash data, specifically data taken from the front crush zone during collision tests. We would compare data from vehicles that would be market competitors with our MechaCar models and see how they compared in frontal collision outcomes. The data required would be taken from our internal crash testing efforts as well as data from the NHTSA.
+
+Sample crush profile taken from NHTSA testing on the 2011 Toyota Prius 5-door
+
+![prius]()
+
+Without knowing population means, we would run some two-sample t-tests comparing MechaCar collison data with collision data from similar vehicles (i.e. a MechaCar SUV with competitor SUVs). We could look at the difference in measurement of crash zones (1 through 6) after the crash vs before to see if there is a difference in means between our two samples (MechaCar vs competitor). The null hypothesis would be that there is no difference in the means, while the alternate hypothesis would be that there is a difference. MechaCar would be hopeful that their vehicle(s) would withstand collisions better than competitors and could include those facts in future marketing campaigns.
